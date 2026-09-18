@@ -7,7 +7,7 @@
   <!-- SEO Primary Meta Tags -->
   <title>Shiv Jani • Chapter Leader @ Elastic User Group Gujarat | DevOps Engineer</title>
   <meta name="title" content="Shiv Jani • Chapter Leader @ Elastic User Group Gujarat | DevOps Engineer">
-  <meta name="description" content="Shiv Jani's personal digital hub. Chapter Leader @ Elastic User Group Gujarat, DevOps Engineer focused on AWS, Kubernetes, Linux, Infrastructure, and AI.">
+  <meta name="description" content="Shiv Jani's personal digital hub. Chapter Leader @ Elastic User Group Gujarat & DevOps Engineer specializing in AWS, Kubernetes, Linux, Infrastructure, and Elastic Stack.">
   <meta name="author" content="Shiv Jani">
   <meta name="keywords" content="Shiv Jani, Elastic User Group Gujarat, DevOps Engineer, Kubernetes, Linux, AWS, Elasticsearch, Kibana, Red Hat RH124, Terraform, Docker, Gujarat University">
   <link rel="canonical" href="https://shivjani.github.io/">
@@ -30,10 +30,10 @@
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="alternate icon" href="assets/favicon.png" type="image/png">
 
-  <!-- Fonts -->
+  <!-- Google Fonts: Space Grotesk, Inter, JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/style.css">
@@ -44,137 +44,184 @@
     (function() {
       var savedTheme = localStorage.getItem('theme');
       var systemDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-      var theme = savedTheme ? savedTheme : (systemDark ? 'dark' : 'light');
+      var theme = savedTheme ? savedTheme : (systemDark ? 'dark' : 'dark');
       document.documentElement.setAttribute('data-theme', theme);
     })();
   </script>
 </head>
 <body>
 
-  <!-- Ambient Grid Overlay & Subtle Glow -->
+  <!-- Ambient Backdrop -->
   <div class="bg-grid-overlay" aria-hidden="true"></div>
   <div class="bg-glow" aria-hidden="true"></div>
 
   <!-- App Wrapper Container -->
   <div class="app-container">
 
-    <!-- Top Navigation Bar / Theme Toggle -->
-    <header class="top-bar">
-      <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle theme">
-        <span id="theme-toggle-icon"></span>
-      </button>
+    <!-- Top Navigation Header matching reference image -->
+    <header class="top-nav-bar">
+      <a href="#hero-section" class="nav-icon-btn" aria-label="Home / Top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      </a>
+
+      <div class="nav-right-actions">
+        <button id="theme-toggle-btn" class="nav-icon-btn" aria-label="Toggle Theme">
+          <span id="theme-toggle-icon"></span>
+        </button>
+        <a href="https://www.linkedin.com/in/shiv-jani" target="_blank" rel="noopener noreferrer" class="nav-icon-btn nav-in-btn" aria-label="LinkedIn">
+          <span class="in-text">in</span>
+        </a>
+      </div>
     </header>
 
     <!-- Main Content Area -->
     <main>
 
-      <!-- Profile Header Section -->
-      <section class="profile-header" aria-labelledby="profile-name">
-        <div class="avatar-wrapper">
-          <img id="profile-avatar-img" class="profile-avatar" src="assets/Profile.png" alt="Shiv Jani Profile Picture" width="110" height="110" loading="eager">
-          <div id="profile-avatar-fallback" class="avatar-fallback" style="display: none;" aria-hidden="true">SJ</div>
-        </div>
+      <!-- Top Dual Bento Grid (Side by side on desktop, stacked on mobile) -->
+      <div class="bento-top-grid">
 
-        <h1 id="profile-name" class="profile-name">Shiv Jani</h1>
-        <div id="profile-badge" class="profile-badge">CHAPTER LEADER @ ELASTIC USER GROUP GUJARAT</div>
-        <p id="profile-bio" class="profile-bio">DevOps Engineer • Cloud • Kubernetes • Linux • AI</p>
-        <div id="profile-location" class="profile-location" style="font-size: 0.85rem; color: var(--text-tertiary); font-weight: 500;">📍 Ahmedabad, Gujarat, India</div>
+        <!-- Reference Design Header Block (Sage/Light Green Header Card) -->
+        <section id="hero-section" class="bento-hero-header">
+          <div class="hero-left-content">
+            <h1 class="hero-display-name">SHIV JANI</h1>
+            <p class="hero-role-title">Chapter Leader @ Elastic User Group Gujarat | DevOps Engineer</p>
+            
+            <div class="hero-action-pills">
+              <span class="pill-badge pill-open-work">
+                <span class="status-pulse-dot"></span>
+                Open to Work
+              </span>
+              <a href="https://github.com/Jani-shiv" target="_blank" rel="noopener noreferrer" class="pill-circle-btn" aria-label="GitHub Profile" data-tooltip="Star on GitHub">★</a>
+              <a href="mailto:shivjani2005@gmail.com" class="pill-circle-btn" aria-label="Email Contact" data-tooltip="Send Email">↗</a>
+            </div>
+          </div>
 
-        <!-- Availability Indicator -->
-        <div class="status-indicator" style="margin-top: 4px;">
-          <span class="status-dot"></span>
-          <span id="status-text">Open to opportunities</span>
-        </div>
-      </section>
+          <div class="hero-right-avatar">
+            <div class="avatar-circle-frame">
+              <img id="profile-avatar-img" src="assets/Profile.png" alt="Shiv Jani Profile Picture" loading="eager">
+            </div>
+          </div>
+        </section>
 
-      <!-- Social & Quick Action Bar -->
-      <nav class="social-bar" id="social-bar-container" aria-label="Social media & contact links">
-        <a class="social-icon-btn" href="https://www.linkedin.com/in/shiv-jani" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" data-tooltip="LinkedIn">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.78a1.62 1.62 0 1 0 0 3.24 1.62 1.62 0 0 0 0-3.24z"/></svg>
-        </a>
-        <a class="social-icon-btn" href="https://github.com/Jani-shiv" target="_blank" rel="noopener noreferrer" aria-label="GitHub" data-tooltip="GitHub">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-        </a>
-        <a class="social-icon-btn" href="mailto:shivjani2005@gmail.com" aria-label="Email" data-tooltip="Email">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-        </a>
-        <a class="social-icon-btn" href="tel:+918160308850" aria-label="Call" data-tooltip="Call">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-        </a>
-      </nav>
+        <!-- Dark Bento Main Container (Matching Reference Image Dark Card Block) -->
+        <section class="bento-dark-block">
+
+          <!-- Intro Bio Quote Card -->
+          <div class="bento-quote-card">
+            <p class="bento-quote-text">
+              "Hi, I'm <strong class="text-highlight-teal">Shiv</strong>, a Chapter Leader @ Elastic User Group Gujarat and DevOps Engineer passionate about Cloud Infrastructure, Kubernetes, Linux, and AI."
+            </p>
+          </div>
+
+          <!-- Top Skills Grid Block -->
+          <div class="bento-skills-block">
+            <span class="bento-skills-label">Top Skills</span>
+            <div class="skills-grid-row">
+              <div class="skill-square-tile" data-tooltip="Linux RHEL">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+                <span>Linux</span>
+              </div>
+              <div class="skill-square-tile" data-tooltip="AWS Cloud">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+                <span>AWS</span>
+              </div>
+              <div class="skill-square-tile" data-tooltip="Kubernetes">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                <span>K8s</span>
+              </div>
+              <div class="skill-square-tile" data-tooltip="Docker">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M6 7V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v3"/></svg>
+                <span>Docker</span>
+              </div>
+              <div class="skill-square-tile" data-tooltip="Elasticsearch & Kibana">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                <span>Elastic</span>
+              </div>
+              <div class="skill-square-tile" data-tooltip="Terraform IaC">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                <span>Terraform</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Featured Highlights Grid (Yellow Action Card + Stat Cards) -->
+          <div class="bento-highlights-row">
+            
+            <!-- Yellow Featured Card: VIEW EXPERIENCE -->
+            <a href="#experience-section" class="bento-card-yellow-highlight">
+              <div class="yellow-card-inner">
+                <span class="yellow-card-title">VIEW EXPERIENCE</span>
+                <span class="yellow-card-arrow">↗</span>
+              </div>
+            </a>
+
+            <!-- Right Grid Stat Cards -->
+            <div class="bento-stats-column">
+              <div class="bento-stat-card card-white-bg">
+                <span class="stat-number">6+</span>
+                <span class="stat-label">Work Roles &amp; Positions</span>
+              </div>
+              
+              <div class="bento-stats-split">
+                <div class="bento-stat-card card-dark-bg">
+                  <span class="stat-number-sm">5+</span>
+                  <span class="stat-label-sm">Certifications</span>
+                </div>
+                <div class="bento-stat-card card-dark-bg">
+                  <span class="stat-number-sm">RH124</span>
+                  <span class="stat-label-sm">Red Hat RHEL</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Social Icons Row matching image bottom footer -->
+          <div class="bento-social-icons-row">
+            <a href="https://medium.com/@shiv-jani" target="_blank" rel="noopener noreferrer" class="social-circle-btn" aria-label="Medium Blog" data-tooltip="Medium Articles">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42c1.87 0 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/shiv-jani" target="_blank" rel="noopener noreferrer" class="social-circle-btn" aria-label="LinkedIn" data-tooltip="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.78a1.62 1.62 0 1 0 0 3.24 1.62 1.62 0 0 0 0-3.24z"/></svg>
+            </a>
+            <a href="https://github.com/Jani-shiv" target="_blank" rel="noopener noreferrer" class="social-circle-btn" aria-label="GitHub" data-tooltip="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+            <a href="mailto:shivjani2005@gmail.com" class="social-circle-btn" aria-label="Email" data-tooltip="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+            <a href="tel:+918160308850" class="social-circle-btn" aria-label="Phone Call" data-tooltip="Call">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </a>
+          </div>
+
+          <!-- Primary Action Button matching "Hire me" button in reference -->
+          <div class="bento-primary-btn-wrapper">
+            <a href="mailto:shivjani2005@gmail.com" class="bento-yellow-pill-btn">Get In Touch</a>
+          </div>
+
+        </section>
+
+      </div>
 
       <!-- Professional Summary Card -->
       <section style="margin-top: 24px;" aria-labelledby="summary-title">
         <div class="summary-card">
           <h2 id="summary-title" class="summary-title">About Me</h2>
           <p id="profile-summary-text" class="summary-text">
-            As a Social Media Manager at Sairam Consultancy, actively contributing to the company's digital presence by creating strategic campaigns, publishing engaging content, and analyzing performance metrics to enhance brand awareness and online engagement. Collaborating with internal teams to promote services, events, and updates while fostering relationships with clients and candidates. Currently pursuing a BSc in IT with a specialization in Cloud &amp; Data Management from Gujarat University (expected July 2028). Volunteering with Elastic to demonstrate real-time data analysis using Elasticsearch and Kibana and supporting open-source initiatives at Open Source Weekend. Committed to utilizing technical skills and social media expertise to drive impactful digital strategies.
+            DevOps &amp; Cloud Engineer specializing in AWS, Kubernetes, Linux, Docker, Infrastructure as Code, and Observability. As <strong>Chapter Leader of Elastic User Group Gujarat</strong>, I lead technical sessions on Elasticsearch &amp; AI infrastructure while publishing practical DevOps guides on <strong>Medium</strong>. Associated with <strong>Rittly</strong> (AI-powered platform for creators) and pursuing BSc IT in Cloud &amp; Data Management at Gujarat University—focused on building, automating, and scaling reliable cloud systems.
           </p>
         </div>
       </section>
 
-      <!-- Primary Hub Link Cards -->
-      <section style="margin-top: 24px;" aria-labelledby="links-heading">
-        <h2 id="links-heading" class="sr-only" style="position: absolute; width: 1px; height: 1px; overflow: hidden;">Quick Links</h2>
-        <div class="links-container" id="primary-links-container">
-          <a class="link-card featured-card" href="https://www.linkedin.com/in/shiv-jani" target="_blank" rel="noopener noreferrer">
-            <div class="link-card-content">
-              <span class="link-number">01</span>
-              <div class="link-icon-box"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.78a1.62 1.62 0 1 0 0 3.24 1.62 1.62 0 0 0 0-3.24z"/></svg></div>
-              <div class="link-details">
-                <div class="link-title-row"><span class="link-title">LinkedIn Profile</span><span class="link-badge">Connect</span></div>
-                <span class="link-description">Connect with me professionally, view career updates and network.</span>
-              </div>
-            </div>
-            <div class="link-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
-          </a>
-
-          <a class="link-card" href="https://github.com/Jani-shiv" target="_blank" rel="noopener noreferrer">
-            <div class="link-card-content">
-              <span class="link-number">02</span>
-              <div class="link-icon-box"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg></div>
-              <div class="link-details">
-                <div class="link-title-row"><span class="link-title">GitHub Repositories</span></div>
-                <span class="link-description">Explore my DevOps projects, Kubernetes manifests, and IaC scripts.</span>
-              </div>
-            </div>
-            <div class="link-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
-          </a>
-
-          <a class="link-card" href="mailto:shivjani2005@gmail.com">
-            <div class="link-card-content">
-              <span class="link-number">03</span>
-              <div class="link-icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
-              <div class="link-details">
-                <div class="link-title-row"><span class="link-title">Send an Email</span></div>
-                <span class="link-description">Direct email contact for collaborations and opportunities.</span>
-              </div>
-            </div>
-            <div class="link-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
-          </a>
-
-          <a class="link-card" href="tel:+918160308850">
-            <div class="link-card-content">
-              <span class="link-number">04</span>
-              <div class="link-icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
-              <div class="link-details">
-                <div class="link-title-row"><span class="link-title">Direct Phone Call</span></div>
-                <span class="link-description">+91 8160308850 (Work)</span>
-              </div>
-            </div>
-            <div class="link-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
-          </a>
-        </div>
-      </section>
-
       <!-- Work Experience Section -->
-      <section style="margin-top: 32px;" aria-labelledby="experience-title">
+      <section id="experience-section" style="margin-top: 32px;" aria-labelledby="experience-title">
         <div class="section-title-wrapper">
           <h2 id="experience-title" class="section-title">Work Experience</h2>
         </div>
         <div id="experience-container" class="timeline-container">
           
-          <div class="timeline-card">
+          <div class="timeline-card bento-glass-card">
             <div class="timeline-header">
               <div class="timeline-role">Organizing Team Member - Elastic User Group Gujarat</div>
               <div class="timeline-meta">
@@ -197,7 +244,7 @@
             </div>
           </div>
 
-          <div class="timeline-card">
+          <div class="timeline-card bento-glass-card">
             <div class="timeline-header">
               <div class="timeline-role">DevOps Engineer Intern</div>
               <div class="timeline-meta">
@@ -220,7 +267,7 @@
             </div>
           </div>
 
-          <div class="timeline-card">
+          <div class="timeline-card bento-glass-card">
             <div class="timeline-header">
               <div class="timeline-role">Linux Administrator</div>
               <div class="timeline-meta">
@@ -241,7 +288,7 @@
             </div>
           </div>
 
-          <div class="timeline-card">
+          <div class="timeline-card bento-glass-card">
             <div class="timeline-header">
               <div class="timeline-role">Volunteer</div>
               <div class="timeline-meta">
@@ -257,7 +304,7 @@
             </div>
           </div>
 
-          <div class="timeline-card">
+          <div class="timeline-card bento-glass-card">
             <div class="timeline-header">
               <div class="timeline-role">Social Media Manager</div>
               <div class="timeline-meta">
@@ -273,7 +320,7 @@
             </div>
           </div>
 
-          <div class="timeline-card">
+          <div class="timeline-card bento-glass-card">
             <div class="timeline-header">
               <div class="timeline-role">Frontend Developer &amp; Web Developer</div>
               <div class="timeline-meta">
@@ -298,9 +345,10 @@
           <h2 id="gallery-title" class="section-title">My All Tech Life</h2>
         </div>
         <p id="gallery-subtitle" class="section-subtitle">Moments from workshops, Elastic User Group meetups, Elasticon, and tech community events.</p>
+
         <div id="gallery-grid-container" class="gallery-grid" style="margin-top: 14px;">
           
-          <div class="gallery-card">
+          <div class="gallery-card bento-glass-card">
             <img class="gallery-img" src="assets/PXL_20260315_053943073.jpg" alt="Elasticon Conference &amp; Community Meetup" loading="lazy">
             <div class="gallery-overlay">
               <div class="gallery-card-meta">Conferences • 2026</div>
@@ -308,7 +356,7 @@
             </div>
           </div>
 
-          <div class="gallery-card">
+          <div class="gallery-card bento-glass-card">
             <img class="gallery-img" src="assets/PXL_20260315_090714018.PORTRAIT~2.jpg" alt="Elastic User Group Gujarat Presentation" loading="lazy">
             <div class="gallery-overlay">
               <div class="gallery-card-meta">Speaking • 2026</div>
@@ -316,7 +364,7 @@
             </div>
           </div>
 
-          <div class="gallery-card">
+          <div class="gallery-card bento-glass-card">
             <img class="gallery-img" src="assets/PXL_20260508_080751860.jpg" alt="DevOps &amp; Cloud Hands-on Workshop" loading="lazy">
             <div class="gallery-overlay">
               <div class="gallery-card-meta">Workshops • 2026</div>
@@ -324,7 +372,7 @@
             </div>
           </div>
 
-          <div class="gallery-card">
+          <div class="gallery-card bento-glass-card">
             <img class="gallery-img" src="assets/PXL_20260508_111913153.jpg" alt="Elasticsearch &amp; Log Monitoring Demo" loading="lazy">
             <div class="gallery-overlay">
               <div class="gallery-card-meta">Elastic • 2026</div>
@@ -332,7 +380,7 @@
             </div>
           </div>
 
-          <div class="gallery-card">
+          <div class="gallery-card bento-glass-card">
             <img class="gallery-img" src="assets/PXL_20260110_041926459.jpg" alt="Cloud &amp; Open Source Community Event" loading="lazy">
             <div class="gallery-overlay">
               <div class="gallery-card-meta">Events • 2026</div>
@@ -340,7 +388,7 @@
             </div>
           </div>
 
-          <div class="gallery-card">
+          <div class="gallery-card bento-glass-card">
             <img class="gallery-img" src="assets/PXL_20260404_090329257.PORTRAIT~2.jpg" alt="Kubernetes &amp; Docker Tech Talk" loading="lazy">
             <div class="gallery-overlay">
               <div class="gallery-card-meta">Speaking • 2026</div>
@@ -357,27 +405,27 @@
           <h2 id="certifications-title" class="section-title">Certifications</h2>
         </div>
         <div id="certifications-container" class="certs-grid">
-          <div class="cert-card">
+          <div class="cert-card bento-glass-card">
             <span class="cert-badge">DevOps</span>
             <div class="cert-name">DevOps Engineer Micro Degree</div>
             <div class="cert-issuer">Professional Certification</div>
           </div>
-          <div class="cert-card">
+          <div class="cert-card bento-glass-card">
             <span class="cert-badge">Red Hat / Linux</span>
             <div class="cert-name">Red Hat System Administration I (RH124 - RHA) - Ver. 9.3</div>
             <div class="cert-issuer">Red Hat</div>
           </div>
-          <div class="cert-card">
+          <div class="cert-card bento-glass-card">
             <span class="cert-badge">Database</span>
             <div class="cert-name">From Relational Model (SQL) to MongoDB's Document Model</div>
             <div class="cert-issuer">MongoDB University</div>
           </div>
-          <div class="cert-card">
+          <div class="cert-card bento-glass-card">
             <span class="cert-badge">MongoDB</span>
             <div class="cert-name">MongoDB Schema Design Patterns and Antipatterns Skill Badge</div>
             <div class="cert-issuer">MongoDB University</div>
           </div>
-          <div class="cert-card">
+          <div class="cert-card bento-glass-card">
             <span class="cert-badge">Python</span>
             <div class="cert-name">Python Developer Certification</div>
             <div class="cert-issuer">Python Institute</div>
@@ -391,47 +439,26 @@
           <h2 id="education-title" class="section-title">Education</h2>
         </div>
         <div id="education-container" class="edu-grid">
-          <div class="edu-card">
+          <div class="edu-card bento-glass-card">
             <div class="edu-degree">MSc.IT - Cloud &amp; Data Management and Application</div>
             <div class="edu-institution">Gujarat University (Ahmedabad, India)</div>
             <div class="edu-period">June 2026 - June 2028</div>
           </div>
-          <div class="edu-card">
+          <div class="edu-card bento-glass-card">
             <div class="edu-degree">BSc.IT - Cloud &amp; Data Management and Application</div>
             <div class="edu-institution">Gujarat University (Ahmedabad, India)</div>
             <div class="edu-period">July 2023 - May 2026</div>
           </div>
-          <div class="edu-card">
+          <div class="edu-card bento-glass-card">
             <div class="edu-degree">Web Development &amp; Information Technology Certification</div>
             <div class="edu-institution">Acmegrade</div>
             <div class="edu-period">January 2024 - December 2024</div>
           </div>
-          <div class="edu-card">
+          <div class="edu-card bento-glass-card">
             <div class="edu-degree">High School Diploma - Biology / Biological Sciences</div>
             <div class="edu-institution">Snvv High School (Ahmedabad, India)</div>
             <div class="edu-period">2022 - June 2023</div>
           </div>
-        </div>
-      </section>
-
-      <!-- Professional Skills Section -->
-      <section style="margin-top: 32px;" aria-labelledby="tech-title">
-        <div class="section-title-wrapper">
-          <h2 id="tech-title" class="section-title">Skills &amp; Technologies</h2>
-        </div>
-        <div id="tech-chips-container" class="tech-chips-wrapper">
-          <div class="tech-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg> <span>Linux Administration</span></div>
-          <div class="tech-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg> <span>AWS Cloud</span></div>
-          <div class="tech-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg> <span>Kubernetes</span></div>
-          <div class="tech-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M6 7V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v3"/></svg> <span>Docker</span></div>
-          <div class="tech-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg> <span>Terraform</span></div>
-          <div class="tech-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg> <span>Ansible</span></div>
-          <div class="tech-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg> <span>Elasticsearch &amp; Kibana</span></div>
-          <div class="tech-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M6 9v12"/><path d="M18 15a9 9 0 0 0-9-9H6"/></svg> <span>Git &amp; GitHub</span></div>
-          <div class="tech-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg> <span>CI/CD Pipelines</span></div>
-          <div class="tech-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg> <span>Shell Scripting (Bash)</span></div>
-          <div class="tech-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg> <span>GitOps &amp; ArgoCD</span></div>
-          <div class="tech-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> <span>Cloud Security &amp; IAM</span></div>
         </div>
       </section>
 
@@ -441,9 +468,9 @@
           <h2 id="languages-title" class="section-title">Languages</h2>
         </div>
         <div id="languages-container" class="languages-row">
-          <div class="lang-chip"><span>English</span> <span class="lang-level">(Limited Working)</span></div>
-          <div class="lang-chip"><span>Hindi</span> <span class="lang-level">(Native / Bilingual)</span></div>
-          <div class="lang-chip"><span>Gujarati</span> <span class="lang-level">(Native / Bilingual)</span></div>
+          <div class="lang-chip bento-glass-card"><span>English</span> <span class="lang-level">(Limited Working)</span></div>
+          <div class="lang-chip bento-glass-card"><span>Hindi</span> <span class="lang-level">(Native / Bilingual)</span></div>
+          <div class="lang-chip bento-glass-card"><span>Gujarati</span> <span class="lang-level">(Native / Bilingual)</span></div>
         </div>
       </section>
 

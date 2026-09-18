@@ -419,7 +419,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     gal.items.forEach(item => {
       const card = document.createElement('div');
-      card.className = 'gallery-card';
+      card.className = 'gallery-card bento-glass-card';
 
       const img = document.createElement('img');
       img.className = 'gallery-img';

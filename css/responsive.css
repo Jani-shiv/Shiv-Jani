@@ -1,105 +1,112 @@
 /* ==========================================================================
-   Shiv Jani - Responsive Breakpoints & Adaptive Layout Adjustments
+   Shiv Jani - Responsive Breakdown & Media Queries
+   Mobile First -> Tablet -> Widescreen Desktop Scaling
    ========================================================================== */
 
-/* Mobile Small (320px to 374px) */
-@media (max-width: 374px) {
-  .app-container {
-    padding: 16px 12px 32px;
-    gap: 24px;
+/* Mobile Devices (<480px) */
+@media (max-width: 480px) {
+  body {
+    padding: 12px 8px;
   }
 
-  .profile-name {
-    font-size: 1.65rem;
-  }
-
-  .profile-bio {
-    font-size: 0.95rem;
-  }
-
-  .social-icon-btn {
-    width: 42px;
-    height: 42px;
-  }
-
-  .bento-grid,
-  .articles-grid {
+  .bento-hero-header {
     grid-template-columns: 1fr;
+    text-align: center;
+    padding: 24px 18px;
+  }
+  
+  .hero-right-avatar {
+    order: -1;
+    margin-bottom: 6px;
   }
 
-  .link-card {
-    padding: 14px 14px;
+  .avatar-circle-frame {
+    width: 110px;
+    height: 110px;
   }
 
-  .link-card-content {
-    gap: 10px;
-  }
-
-  .link-number {
-    display: none;
-  }
-}
-
-/* Mobile Standard (375px to 767px) */
-@media (max-width: 767px) {
-  .bento-grid,
-  .articles-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .cta-buttons {
-    width: 100%;
-    flex-direction: column;
-  }
-
-  .cta-btn-primary,
-  .cta-btn-secondary {
-    width: 100%;
+  .hero-action-pills {
     justify-content: center;
   }
 
-  .social-icon-btn[data-tooltip]::after {
-    display: none; /* Hide hover tooltips on touch screens */
-  }
-}
-
-/* Tablet (768px to 1023px) */
-@media (min-width: 768px) {
-  .app-container {
-    padding: 36px 24px 64px;
-    gap: 36px;
-  }
-
-  .profile-name {
+  .hero-display-name {
     font-size: 2.2rem;
   }
 
-  .profile-avatar {
-    width: 120px;
-    height: 120px;
+  .skills-grid-row {
+    grid-template-columns: repeat(3, 1fr);
   }
 
-  .avatar-wrapper {
-    width: 120px;
-    height: 120px;
+  .bento-highlights-row {
+    grid-template-columns: 1fr;
   }
 
-  .bento-grid,
-  .articles-grid {
+  .bento-social-icons-row {
+    gap: 10px;
+  }
+
+  .social-circle-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .gallery-grid, .certs-grid, .timeline-container, .edu-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Tablet Devices (481px to 899px) */
+@media (min-width: 481px) and (max-width: 899px) {
+  .bento-hero-header {
+    grid-template-columns: 1fr 130px;
+    padding: 28px 22px;
+  }
+
+  .skills-grid-row {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .gallery-grid, .certs-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Desktop Large (1024px+) */
-@media (min-width: 1024px) {
-  .app-container {
-    max-width: 740px;
+/* Desktop Widescreen Devices (>=900px) */
+@media (min-width: 900px) {
+  body {
+    padding: 32px 20px;
   }
-}
 
-/* High Resolution Display / Ultrawide (1440px+) */
-@media (min-width: 1440px) {
-  .app-container {
-    max-width: 760px;
+  .bento-top-grid {
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    gap: 20px;
+    align-items: stretch;
+  }
+
+  .bento-hero-header {
+    padding: 36px 30px;
+    grid-template-columns: 1fr 140px;
+  }
+
+  .hero-display-name {
+    font-size: 3.2rem;
+  }
+
+  .avatar-circle-frame {
+    width: 140px;
+    height: 140px;
+  }
+
+  .timeline-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-grid, .certs-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .edu-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

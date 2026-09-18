@@ -10,7 +10,7 @@ window.SITE_CONFIG = {
     badge: "CHAPTER LEADER @ ELASTIC USER GROUP GUJARAT",
     headline: "DevOps Engineer • Cloud • Kubernetes • Linux • AI",
     bio: "Currently pursuing a BSc in IT with a specialization in Cloud & Data Management from Gujarat University (expected July 2028). Volunteering with Elastic to demonstrate real-time data analysis using Elasticsearch and Kibana, and supporting open-source initiatives at Open Source Weekend.",
-    summary: "As a Social Media Manager at Sairam Consultancy, actively contributing to the company's digital presence by creating strategic campaigns, publishing engaging content, and analyzing performance metrics to enhance brand awareness and online engagement. Collaborating with internal teams to promote services, events, and updates while fostering relationships with clients and candidates. Currently pursuing a BSc in IT with a specialization in Cloud & Data Management from Gujarat University (expected July 2028). Volunteering with Elastic to demonstrate real-time data analysis using Elasticsearch and Kibana and supporting open-source initiatives at Open Source Weekend. Committed to utilizing technical skills and social media expertise to drive impactful digital strategies.",
+    summary: "DevOps & Cloud Engineer specializing in AWS, Kubernetes, Linux, Docker, Infrastructure as Code, and Observability. As Chapter Leader of Elastic User Group Gujarat, I lead technical sessions on Elasticsearch & AI infrastructure while publishing practical DevOps guides on Medium. Associated with Rittly (AI-powered platform for creators) and pursuing BSc IT in Cloud & Data Management at Gujarat University—focused on building, automating, and scaling reliable cloud systems.",
     status: { active: true, text: "Open to opportunities", dotColor: "#10B981" },
     location: "Ahmedabad, Gujarat, India",
     phone: "+91 8160308850",
@@ -23,7 +23,16 @@ window.SITE_CONFIG = {
     linkedin: { url: "https://www.linkedin.com/in/shiv-jani", label: "LinkedIn", username: "shiv-jani" },
     github: { url: "https://github.com/Jani-shiv", label: "GitHub", username: "@Jani-shiv" },
     email: { url: "mailto:shivjani2005@gmail.com", label: "Email", username: "shivjani2005@gmail.com" },
-    phone: { url: "tel:+918160308850", label: "Call", username: "+91 8160308850" }
+    phone: {
+      url: "tel:+918160308850",
+      label: "Call",
+      username: "+91 8160308850"
+    },
+    medium: {
+      url: "https://medium.com/@shiv-jani",
+      label: "Medium",
+      username: "@shiv-jani"
+    }
   },
 
   primaryLinks: [
