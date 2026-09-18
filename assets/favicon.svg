@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#0B0F14"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF6B35"/>
+      <stop offset="100%" stop-color="#F4B942"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Card -->
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)"/>
+  <rect x="16" y="16" width="480" height="480" rx="112" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="8"/>
+
+  <!-- DevOps Prompt & Cloud Icon Symbol -->
+  <g transform="translate(106, 120)">
+    <!-- Terminal Prompt Chevron -->
+    <path d="M40 70 L140 150 L40 230" fill="none" stroke="url(#accentGrad)" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Terminal Cursor Line -->
+    <line x1="170" y1="230" x2="260" y2="230" stroke="#F9FAFB" stroke-width="36" stroke-linecap="round"/>
+    
+    <!-- Kubernetes / Cloud Node Accent Dot -->
+    <circle cx="260" cy="90" r="24" fill="url(#accentGrad)"/>
+  </g>
+</svg>

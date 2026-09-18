@@ -1,0 +1,105 @@
+/* ==========================================================================
+   Shiv Jani - Responsive Breakpoints & Adaptive Layout Adjustments
+   ========================================================================== */
+
+/* Mobile Small (320px to 374px) */
+@media (max-width: 374px) {
+  .app-container {
+    padding: 16px 12px 32px;
+    gap: 24px;
+  }
+
+  .profile-name {
+    font-size: 1.65rem;
+  }
+
+  .profile-bio {
+    font-size: 0.95rem;
+  }
+
+  .social-icon-btn {
+    width: 42px;
+    height: 42px;
+  }
+
+  .bento-grid,
+  .articles-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .link-card {
+    padding: 14px 14px;
+  }
+
+  .link-card-content {
+    gap: 10px;
+  }
+
+  .link-number {
+    display: none;
+  }
+}
+
+/* Mobile Standard (375px to 767px) */
+@media (max-width: 767px) {
+  .bento-grid,
+  .articles-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-buttons {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .cta-btn-primary,
+  .cta-btn-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .social-icon-btn[data-tooltip]::after {
+    display: none; /* Hide hover tooltips on touch screens */
+  }
+}
+
+/* Tablet (768px to 1023px) */
+@media (min-width: 768px) {
+  .app-container {
+    padding: 36px 24px 64px;
+    gap: 36px;
+  }
+
+  .profile-name {
+    font-size: 2.2rem;
+  }
+
+  .profile-avatar {
+    width: 120px;
+    height: 120px;
+  }
+
+  .avatar-wrapper {
+    width: 120px;
+    height: 120px;
+  }
+
+  .bento-grid,
+  .articles-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop Large (1024px+) */
+@media (min-width: 1024px) {
+  .app-container {
+    max-width: 740px;
+  }
+}
+
+/* High Resolution Display / Ultrawide (1440px+) */
+@media (min-width: 1440px) {
+  .app-container {
+    max-width: 760px;
+  }
+}

@@ -1,0 +1,3 @@
+# Replace YOUR-DOMAIN.COM with your actual custom domain (e.g. shivjani.com)
+# If using default github.io domain (e.g. shivjani.github.io), delete this CNAME file.
+YOUR-DOMAIN.COM
