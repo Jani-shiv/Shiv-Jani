@@ -1,6 +1,6 @@
 /**
  * Shiv Jani - Personal Brand & Digital Hub Configuration
- * Complete data extracted from official PDF Resume & LinkedIn Profile.
+ * Updated with requested removals and full official resume summary.
  */
 
 window.SITE_CONFIG = {
@@ -11,7 +11,7 @@ window.SITE_CONFIG = {
     badge: "CHAPTER LEADER @ ELASTIC USER GROUP GUJARAT",
     headline: "DevOps Engineer • Cloud • Kubernetes • Linux • AI",
     bio: "Currently pursuing a BSc in IT with a specialization in Cloud & Data Management from Gujarat University (expected July 2028). Volunteering with Elastic to demonstrate real-time data analysis using Elasticsearch and Kibana, and supporting open-source initiatives at Open Source Weekend.",
-    summary: "As a Social Media Manager at Sairam Consultancy, actively contributing to the company's digital presence by creating strategic campaigns. Collaborating with internal teams to promote services and events while fostering relationships. Committed to utilizing technical skills and community expertise to drive impactful digital strategies.",
+    summary: "As a Social Media Manager at Sairam Consultancy, actively contributing to the company's digital presence by creating strategic campaigns, publishing engaging content, and analyzing performance metrics to enhance brand awareness and online engagement. Collaborating with internal teams to promote services, events, and updates while fostering relationships with clients and candidates. Currently pursuing a BSc in IT with a specialization in Cloud & Data Management from Gujarat University (expected July 2028). Volunteering with Elastic to demonstrate real-time data analysis using Elasticsearch and Kibana and supporting open-source initiatives at Open Source Weekend. Committed to utilizing technical skills and social media expertise to drive impactful digital strategies.",
     status: {
       active: true,
       text: "Open to opportunities",
@@ -36,11 +36,6 @@ window.SITE_CONFIG = {
       label: "GitHub",
       username: "@Jani-shiv"
     },
-    portfolio: {
-      url: "https://itsme-gold.vercel.app/",
-      label: "Portfolio",
-      username: "itsme-gold.vercel.app"
-    },
     email: {
       url: "mailto:shivjani2005@gmail.com",
       label: "Email",
@@ -53,29 +48,21 @@ window.SITE_CONFIG = {
     }
   },
 
-  // Primary Action Cards
+  // Primary Action Cards (Main Portfolio Card Removed as requested)
   primaryLinks: [
     {
-      id: "portfolio",
-      number: "01",
-      title: "Main Portfolio Website",
-      description: "Explore my live personal portfolio hosted on Vercel.",
-      url: "https://itsme-gold.vercel.app/",
-      icon: "briefcase",
-      featured: true,
-      badge: "Live Portfolio"
-    },
-    {
       id: "linkedin",
-      number: "02",
+      number: "01",
       title: "LinkedIn Profile",
       description: "Connect with me professionally, view career updates and network.",
       url: "https://www.linkedin.com/in/shiv-jani",
-      icon: "linkedin"
+      icon: "linkedin",
+      featured: true,
+      badge: "Connect"
     },
     {
       id: "github",
-      number: "03",
+      number: "02",
       title: "GitHub Repositories",
       description: "Explore my DevOps projects, Kubernetes manifests, and IaC scripts.",
       url: "https://github.com/Jani-shiv",
@@ -83,7 +70,7 @@ window.SITE_CONFIG = {
     },
     {
       id: "email",
-      number: "04",
+      number: "03",
       title: "Send an Email",
       description: "Direct email contact for collaborations and opportunities.",
       url: "mailto:shivjani2005@gmail.com",
@@ -91,7 +78,7 @@ window.SITE_CONFIG = {
     },
     {
       id: "call",
-      number: "05",
+      number: "04",
       title: "Direct Phone Call",
       description: "+91 8160308850 (Work)",
       url: "tel:+918160308850",
@@ -336,7 +323,7 @@ window.SITE_CONFIG = {
     subtitle: "Elastic User Group Gujarat Interactive Demos",
     description: "Built and demonstrated real-time log analysis, indexing strategies, and custom Kibana dashboards for cloud observability use cases.",
     url: "https://github.com/Jani-shiv",
-    demoUrl: "https://itsme-gold.vercel.app/",
+    demoUrl: "https://github.com/Jani-shiv",
     technologies: ["Elasticsearch", "Kibana", "ELK Stack", "Docker", "Linux"],
     stats: [
       { label: "Stack", value: "Elasticsearch" },
