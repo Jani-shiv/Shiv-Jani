@@ -265,6 +265,12 @@ window.SITE_CONFIG = {
     subtitle: "Captured moments from workshops, Elastic User Group meetups, Elasticon, and community events.",
     items: [
       {
+        src: "assets/PXL_20260823_081114078.jpg",
+        title: "DevOps Tech Networking & Elastic User Group Meetup",
+        category: "Meetups",
+        date: "2026"
+      },
+      {
         src: "assets/PXL_20260315_053943073.jpg",
         title: "Elasticon Conference & Community Meetup",
         category: "Conferences",

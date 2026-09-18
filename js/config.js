@@ -91,15 +91,14 @@ window.SITE_CONFIG = {
     title: "My All Tech Life",
     subtitle: "Captured moments from workshops, Elastic User Group meetups, Elasticon, and community events.",
     items: [
+      { src: "assets/PXL_20260823_081114078.jpg", title: "DevOps Tech Networking & Elastic User Group Meetup", category: "Meetups", date: "2026" },
       { src: "assets/PXL_20260315_053943073.jpg", title: "Elasticon Conference & Community Meetup", category: "Conferences", date: "2026" },
       { src: "assets/PXL_20260315_090714018.PORTRAIT~2.jpg", title: "Elastic User Group Gujarat Presentation", category: "Speaking", date: "2026" },
       { src: "assets/PXL_20260508_080751860.jpg", title: "DevOps & Cloud Hands-on Workshop", category: "Workshops", date: "2026" },
       { src: "assets/PXL_20260508_111913153.jpg", title: "Elasticsearch & Log Monitoring Demo", category: "Elastic", date: "2026" },
       { src: "assets/PXL_20260110_041926459.jpg", title: "Cloud & Open Source Community Event", category: "Events", date: "2026" },
       { src: "assets/PXL_20260404_090329257.PORTRAIT~2.jpg", title: "Kubernetes & Docker Tech Talk", category: "Speaking", date: "2026" },
-      { src: "assets/PXL_20260519_043718846.PORTRAIT.ORIGINAL.jpg", title: "Open Source Weekend Community", category: "Community", date: "2026" },
-      { src: "assets/PXL_20260823_081114078.jpg", title: "Search AI & Elasticsearch Live Demo", category: "Workshops", date: "2026" },
-      { src: "assets/PXL_20260823_081115726.jpg", title: "DevOps Tech Networking", category: "Meetups", date: "2026" }
+      { src: "assets/PXL_20260519_043718846.PORTRAIT.ORIGINAL.jpg", title: "Open Source Weekend Community", category: "Community", date: "2026" }
     ]
   },
 
