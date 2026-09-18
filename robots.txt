@@ -1,4 +1,7 @@
+# robots.txt for https://shivjani.github.io/
 User-agent: *
 Allow: /
+Disallow: /scratch/
+Disallow: /.git/
 
 Sitemap: https://shivjani.github.io/sitemap.xml
